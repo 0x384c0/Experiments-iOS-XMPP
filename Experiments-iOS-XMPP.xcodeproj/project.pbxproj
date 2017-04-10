@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		497615221E9B7B2100EF7050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497615211E9B7B2100EF7050 /* AppDelegate.swift */; };
+		497615241E9B7B2100EF7050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497615231E9B7B2100EF7050 /* ViewController.swift */; };
+		497615271E9B7B2100EF7050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497615251E9B7B2100EF7050 /* Main.storyboard */; };
+		497615291E9B7B2100EF7050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497615281E9B7B2100EF7050 /* Assets.xcassets */; };
+		4976152C1E9B7B2100EF7050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */; };
+		85E8FF7DBEEF5E357DF45823 /* Pods_Experiments_iOS_XMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4976151E1E9B7B2100EF7050 /* Experiments-iOS-XMPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experiments-iOS-XMPP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		497615211E9B7B2100EF7050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		497615231E9B7B2100EF7050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		497615261E9B7B2100EF7050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		497615281E9B7B2100EF7050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4976152B1E9B7B2100EF7050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4976152D1E9B7B2100EF7050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DB2A5385BFA3A7C5AB817A /* Pods-Experiments-iOS-XMPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.release.xcconfig"; sourceTree = "<group>"; };
+		77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiments_iOS_XMPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D037FD20EFB1BE0C055BF7 /* Pods-Experiments-iOS-XMPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4976151B1E9B7B2100EF7050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E8FF7DBEEF5E357DF45823 /* Pods_Experiments_iOS_XMPP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22F89A11FB11269D3CF0E268 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4D037FD20EFB1BE0C055BF7 /* Pods-Experiments-iOS-XMPP.debug.xcconfig */,
+				64DB2A5385BFA3A7C5AB817A /* Pods-Experiments-iOS-XMPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		497615151E9B7B2100EF7050 = {
+			isa = PBXGroup;
+			children = (
+				497615201E9B7B2100EF7050 /* Experiments-iOS-XMPP */,
+				4976151F1E9B7B2100EF7050 /* Products */,
+				22F89A11FB11269D3CF0E268 /* Pods */,
+				9D8FD1242D3FDE4D902EF3AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4976151F1E9B7B2100EF7050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4976151E1E9B7B2100EF7050 /* Experiments-iOS-XMPP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497615201E9B7B2100EF7050 /* Experiments-iOS-XMPP */ = {
+			isa = PBXGroup;
+			children = (
+				497615211E9B7B2100EF7050 /* AppDelegate.swift */,
+				497615231E9B7B2100EF7050 /* ViewController.swift */,
+				497615251E9B7B2100EF7050 /* Main.storyboard */,
+				497615281E9B7B2100EF7050 /* Assets.xcassets */,
+				4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */,
+				4976152D1E9B7B2100EF7050 /* Info.plist */,
+			);
+			path = "Experiments-iOS-XMPP";
+			sourceTree = "<group>";
+		};
+		9D8FD1242D3FDE4D902EF3AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4976151D1E9B7B2100EF7050 /* Experiments-iOS-XMPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497615301E9B7B2100EF7050 /* Build configuration list for PBXNativeTarget "Experiments-iOS-XMPP" */;
+			buildPhases = (
+				8A6F8E158810E09ABFDAEE21 /* [CP] Check Pods Manifest.lock */,
+				4976151A1E9B7B2100EF7050 /* Sources */,
+				4976151B1E9B7B2100EF7050 /* Frameworks */,
+				4976151C1E9B7B2100EF7050 /* Resources */,
+				641937019E566C00050E446F /* [CP] Embed Pods Frameworks */,
+				E55424019DB9C2DCEC382533 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Experiments-iOS-XMPP";
+			productName = "Experiments-iOS-XMPP";
+			productReference = 4976151E1E9B7B2100EF7050 /* Experiments-iOS-XMPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		497615161E9B7B2100EF7050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = 0x384c0;
+				TargetAttributes = {
+					4976151D1E9B7B2100EF7050 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AW8RFH6CD4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 497615191E9B7B2100EF7050 /* Build configuration list for PBXProject "Experiments-iOS-XMPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 497615151E9B7B2100EF7050;
+			productRefGroup = 4976151F1E9B7B2100EF7050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4976151D1E9B7B2100EF7050 /* Experiments-iOS-XMPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4976151C1E9B7B2100EF7050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4976152C1E9B7B2100EF7050 /* LaunchScreen.storyboard in Resources */,
+				497615291E9B7B2100EF7050 /* Assets.xcassets in Resources */,
+				497615271E9B7B2100EF7050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		641937019E566C00050E446F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A6F8E158810E09ABFDAEE21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E55424019DB9C2DCEC382533 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4976151A1E9B7B2100EF7050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497615241E9B7B2100EF7050 /* ViewController.swift in Sources */,
+				497615221E9B7B2100EF7050 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		497615251E9B7B2100EF7050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497615261E9B7B2100EF7050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4976152B1E9B7B2100EF7050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4976152E1E9B7B2100EF7050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4976152F1E9B7B2100EF7050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497615311E9B7B2100EF7050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D037FD20EFB1BE0C055BF7 /* Pods-Experiments-iOS-XMPP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AW8RFH6CD4;
+				INFOPLIST_FILE = "Experiments-iOS-XMPP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0.Experiments-iOS-XMPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		497615321E9B7B2100EF7050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DB2A5385BFA3A7C5AB817A /* Pods-Experiments-iOS-XMPP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AW8RFH6CD4;
+				INFOPLIST_FILE = "Experiments-iOS-XMPP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.0x384c0.Experiments-iOS-XMPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		497615191E9B7B2100EF7050 /* Build configuration list for PBXProject "Experiments-iOS-XMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4976152E1E9B7B2100EF7050 /* Debug */,
+				4976152F1E9B7B2100EF7050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497615301E9B7B2100EF7050 /* Build configuration list for PBXNativeTarget "Experiments-iOS-XMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497615311E9B7B2100EF7050 /* Debug */,
+				497615321E9B7B2100EF7050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 497615161E9B7B2100EF7050 /* Project object */;
+}
