@@ -12,6 +12,7 @@
 		497615271E9B7B2100EF7050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497615251E9B7B2100EF7050 /* Main.storyboard */; };
 		497615291E9B7B2100EF7050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497615281E9B7B2100EF7050 /* Assets.xcassets */; };
 		4976152C1E9B7B2100EF7050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */; };
+		497615341E9BA36300EF7050 /* XMPPWraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497615331E9BA36300EF7050 /* XMPPWraper.swift */; };
 		85E8FF7DBEEF5E357DF45823 /* Pods_Experiments_iOS_XMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		497615281E9B7B2100EF7050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4976152B1E9B7B2100EF7050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4976152D1E9B7B2100EF7050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497615331E9BA36300EF7050 /* XMPPWraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPWraper.swift; sourceTree = "<group>"; };
 		64DB2A5385BFA3A7C5AB817A /* Pods-Experiments-iOS-XMPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.release.xcconfig"; sourceTree = "<group>"; };
 		77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiments_iOS_XMPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D037FD20EFB1BE0C055BF7 /* Pods-Experiments-iOS-XMPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				497615281E9B7B2100EF7050 /* Assets.xcassets */,
 				4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */,
 				4976152D1E9B7B2100EF7050 /* Info.plist */,
+				497615331E9BA36300EF7050 /* XMPPWraper.swift */,
 			);
 			path = "Experiments-iOS-XMPP";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497615341E9BA36300EF7050 /* XMPPWraper.swift in Sources */,
 				497615241E9B7B2100EF7050 /* ViewController.swift in Sources */,
 				497615221E9B7B2100EF7050 /* AppDelegate.swift in Sources */,
 			);
@@ -379,6 +383,7 @@
 				497615321E9B7B2100EF7050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
