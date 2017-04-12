@@ -94,22 +94,31 @@ class XMPPWraper : NSObject, XMPPRosterDelegate, XMPPStreamDelegate{
     
     
     func xmppStream(_ sender: XMPPStream!, didReceive iq: XMPPIQ!) -> Bool {
-        print("Did receive IQ")
+        print(#function)
+        print(iq)
         return false
     }
     func xmppStream(_ sender: XMPPStream!, didReceive message: XMPPMessage!) {
-        print("Did receive message \(message)")
+        print(#function)
+        print(message)
+        if message.body() != nil{
+            delegate.didReceiveMessage(text: message.body())
+        }
     }
     func xmppStream(_ sender: XMPPStream!, didSend message: XMPPMessage!) {
-        print("Did send message \(message)")
+        print(#function)
+        print(message)
     }
     func xmppStream(_ sender: XMPPStream!, didReceive presence: XMPPPresence!) {
+        print(#function)
+        print(presence)
+        
         let presenceType = presence.type()
         let myUsername = sender.myJID.user
         let presenceFromUser = presence.from().user
         
-        if presenceFromUser != myUsername {
-            print("Did receive presence from \(presenceFromUser)")
+        if let presenceFromUser = presenceFromUser,
+            presenceFromUser != myUsername {
             if presenceType == "available" {
                 delegate.buddyWentOnline("\(presenceFromUser)@gmail.com")
             } else if presenceType == "unavailable" {
@@ -118,7 +127,8 @@ class XMPPWraper : NSObject, XMPPRosterDelegate, XMPPStreamDelegate{
         }
     }
     func xmppRoster(_ sender: XMPPRoster!, didReceiveRosterItem item: DDXMLElement!) {
-        print("Did receive Roster item")
+        print(#function)
+        print(item)
     }
 }
 
@@ -126,5 +136,6 @@ protocol ChatDelegate {
     func buddyWentOnline(_ name: String)
     func buddyWentOffline(_ name: String)
     func didDisconnect()
+    func didReceiveMessage(text:String)
 }
 

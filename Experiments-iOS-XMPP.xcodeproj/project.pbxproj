@@ -13,6 +13,7 @@
 		497615291E9B7B2100EF7050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497615281E9B7B2100EF7050 /* Assets.xcassets */; };
 		4976152C1E9B7B2100EF7050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */; };
 		497615341E9BA36300EF7050 /* XMPPWraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497615331E9BA36300EF7050 /* XMPPWraper.swift */; };
+		497615361E9DE3E700EF7050 /* OneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497615351E9DE3E700EF7050 /* OneRoom.swift */; };
 		85E8FF7DBEEF5E357DF45823 /* Pods_Experiments_iOS_XMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		4976152B1E9B7B2100EF7050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4976152D1E9B7B2100EF7050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497615331E9BA36300EF7050 /* XMPPWraper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPWraper.swift; sourceTree = "<group>"; };
+		497615351E9DE3E700EF7050 /* OneRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoom.swift; sourceTree = "<group>"; };
 		64DB2A5385BFA3A7C5AB817A /* Pods-Experiments-iOS-XMPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.release.xcconfig"; sourceTree = "<group>"; };
 		77B6A14CF8BF3EAFC9629A65 /* Pods_Experiments_iOS_XMPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Experiments_iOS_XMPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D037FD20EFB1BE0C055BF7 /* Pods-Experiments-iOS-XMPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Experiments-iOS-XMPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Experiments-iOS-XMPP/Pods-Experiments-iOS-XMPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,15 +74,40 @@
 		497615201E9B7B2100EF7050 /* Experiments-iOS-XMPP */ = {
 			isa = PBXGroup;
 			children = (
+				49FCACFD1E9E13880079369C /* view */,
+				49FCACFE1E9E13930079369C /* util */,
 				497615211E9B7B2100EF7050 /* AppDelegate.swift */,
-				497615231E9B7B2100EF7050 /* ViewController.swift */,
 				497615251E9B7B2100EF7050 /* Main.storyboard */,
-				497615281E9B7B2100EF7050 /* Assets.xcassets */,
 				4976152A1E9B7B2100EF7050 /* LaunchScreen.storyboard */,
-				4976152D1E9B7B2100EF7050 /* Info.plist */,
-				497615331E9BA36300EF7050 /* XMPPWraper.swift */,
+				49FCACFC1E9E13730079369C /* Supporting Files */,
 			);
 			path = "Experiments-iOS-XMPP";
+			sourceTree = "<group>";
+		};
+		49FCACFC1E9E13730079369C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				497615281E9B7B2100EF7050 /* Assets.xcassets */,
+				4976152D1E9B7B2100EF7050 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49FCACFD1E9E13880079369C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				497615231E9B7B2100EF7050 /* ViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		49FCACFE1E9E13930079369C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				497615331E9BA36300EF7050 /* XMPPWraper.swift */,
+				497615351E9DE3E700EF7050 /* OneRoom.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 		9D8FD1242D3FDE4D902EF3AB /* Frameworks */ = {
@@ -218,6 +245,7 @@
 				497615341E9BA36300EF7050 /* XMPPWraper.swift in Sources */,
 				497615241E9B7B2100EF7050 /* ViewController.swift in Sources */,
 				497615221E9B7B2100EF7050 /* AppDelegate.swift in Sources */,
+				497615361E9DE3E700EF7050 /* OneRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

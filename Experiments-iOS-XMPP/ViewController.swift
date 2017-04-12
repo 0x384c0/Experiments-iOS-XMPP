@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var buggiesListLabel: UILabel!
+    @IBOutlet weak var roomJIDTextField: UITextField!
+    @IBOutlet weak var roomMessagesLabel: UILabel!
     
     @IBAction func connectTap(_ sender: UIButton) {
         dismissKB()
@@ -38,12 +40,20 @@ class ViewController: UIViewController {
     
     @IBAction func fetchBuddies(_ sender: UIButton){//contacts
         self.title = xmppWrapper?.xmppStream.myJID.bare()
-        
         xmppWrapper?.xmppRoster.fetch()
+    }
+    @IBAction func connectToToomTap(_ sender: UIButton) {
+        if let xmppWrapper = xmppWrapper,
+            let roomJID = roomJIDTextField.text,
+            roomJID != ""{
+            oneRoom = OneRoom(xmppWraper: xmppWrapper)
+            oneRoom?.createRoom(roomJID: roomJID)
+            roomMessagesLabel.text = ""
+        }
     }
     
     var xmppWrapper:XMPPWraper?
-    
+    var oneRoom:OneRoom?
     func dismissKB(){
         loginTextField.resignFirstResponder()
         passTextField.resignFirstResponder()
@@ -54,7 +64,9 @@ extension ViewController : ChatDelegate{
     func buddyWentOnline(_ name: String){
         print(#function)
         print(name)
-        buggiesListLabel.text?.append("\(name)\n")
+        if !(buggiesListLabel.text?.contains(name))!{
+            buggiesListLabel.text?.append("\(name)\n")
+        }
     }
     func buddyWentOffline(_ name: String){
         print(#function)
@@ -62,5 +74,8 @@ extension ViewController : ChatDelegate{
     }
     func didDisconnect(){
         print(#function)
+    }
+    func didReceiveMessage(text:String){
+         roomMessagesLabel.text?.append("\(text)\n")
     }
 }

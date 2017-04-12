@@ -22,46 +22,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtv-zp-iq7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="8" y="20" width="359" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TIh-tb-t7S">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="315"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuF-vs-bQr">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0x384c0@xmpp.jp" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuF-vs-bQr">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1Y-Yx-ljb">
-                                                <rect key="frame" x="0.0" y="38" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="38" width="359" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-fK-hi8">
-                                                <rect key="frame" x="0.0" y="76" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="76" width="359" height="30"/>
                                                 <state key="normal" title="Connect"/>
                                                 <connections>
                                                     <action selector="connectTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfv-zn-5bs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jf-Fm-upG">
-                                                <rect key="frame" x="0.0" y="114" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="114" width="359" height="30"/>
                                                 <state key="normal" title="DisConnect"/>
                                                 <connections>
                                                     <action selector="disconnectTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQJ-4l-GuQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN4-nh-D9Z">
-                                                <rect key="frame" x="0.0" y="152" width="375" height="30"/>
-                                                <state key="normal" title="Fetch buddies (Constacts)"/>
+                                                <rect key="frame" x="0.0" y="152" width="359" height="30"/>
+                                                <state key="normal" title="Fetch buddies (Contacts)"/>
                                                 <connections>
                                                     <action selector="fetchBuddies:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGa-4o-FsP"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-3j-Qaq">
-                                                <rect key="frame" x="0.0" y="190" width="375" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buggies" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-3j-Qaq">
+                                                <rect key="frame" x="0.0" y="190" width="359" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="radiochan@meetups.xmpp.ninja" borderStyle="roundedRect" placeholder="Room JID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cpw-E9-CaE">
+                                                <rect key="frame" x="0.0" y="218.5" width="359" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXl-3s-eUt">
+                                                <rect key="frame" x="0.0" y="256.5" width="359" height="30"/>
+                                                <state key="normal" title="Connect to room"/>
+                                                <connections>
+                                                    <action selector="connectToToomTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLd-vP-5x1"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Messages" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-2q-6x5">
+                                                <rect key="frame" x="0.0" y="294.5" width="359" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -80,16 +99,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="jtv-zp-iq7" secondAttribute="trailing" id="7Sd-FC-HNv"/>
+                            <constraint firstAttribute="trailing" secondItem="jtv-zp-iq7" secondAttribute="trailing" constant="8" id="7Sd-FC-HNv"/>
                             <constraint firstItem="jtv-zp-iq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="akP-XD-x3L"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtv-zp-iq7" secondAttribute="bottom" id="f1M-Jg-6FC"/>
-                            <constraint firstItem="jtv-zp-iq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z78-aN-OLf"/>
+                            <constraint firstItem="jtv-zp-iq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="z78-aN-OLf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buggiesListLabel" destination="z7T-3j-Qaq" id="x3W-tn-Oxc"/>
                         <outlet property="loginTextField" destination="GuF-vs-bQr" id="KVI-Mk-FOG"/>
                         <outlet property="passTextField" destination="o1Y-Yx-ljb" id="9OR-r7-0Lf"/>
+                        <outlet property="roomJIDTextField" destination="Cpw-E9-CaE" id="K4T-fE-ugm"/>
+                        <outlet property="roomMessagesLabel" destination="GnH-2q-6x5" id="1zH-gs-0Mt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
